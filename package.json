@@ -1,0 +1,12 @@
+{
+  "name": "storybook-amplitude",
+  "version": "0.1.0",
+  "description": "Storybook Addon for Amplitude",
+  "keywords": [
+    "addon",
+    "storybook",
+    "amplitude"
+  ],
+  "author": "QuintoAndar",
+  "license": "MIT",
+}
