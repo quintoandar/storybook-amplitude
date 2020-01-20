@@ -15,6 +15,12 @@
   ],
   "author": "QuintoAndar",
   "license": "MIT",
+  "dependencies": {
+    "@storybook/addons": "^5.2.8",
+    "@storybook/core-events": "^5.2.8",
+    "amplitude-js": "^5.8.0",
+    "global": "^4.4.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
