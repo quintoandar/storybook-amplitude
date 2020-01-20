@@ -4,6 +4,7 @@
   "description": "Storybook Addon for Amplitude",
   "scripts": {
     "build": "babel src -d dist",
+    "format": "prettier --write '**/*.js'",
   },
   "main": "dist/register.js",
   "keywords": [
@@ -17,5 +18,13 @@
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
+    "husky": "^4.0.1",
+    "prettier": "1.19.1",
+    "pretty-quick": "^2.0.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
 }
