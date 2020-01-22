@@ -36,7 +36,7 @@ The default value is `Story Viewed`.
 
 ## Event anatomy
 
-> lt;dr: the event will be send with `Story Viewed` (or your custom event name) and the a custom property object with `viewMode`, `group`, `page` and `story`.
+> lt;dr: the event will be sent with `Story Viewed` (or your custom event name) and the custom property object with `viewMode`, `group`, `page` and `story`.
 
 The [Storybook provides](https://storybook.js.org/docs/addons/api) just the `path` and `storyId` on the `api` provided by `register` callback. The `strings` are like these examples:
 
