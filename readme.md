@@ -58,7 +58,7 @@ Examples:
 | `/docs/components-accordion--base`     | docs     | components   | accordion  | base     |
 | `/story/components-button--disabled`   | story    | components   | button     | disabled |
 
-Creating a util function that returns an object with viewMode, group, page and story. Something like this:
+Creating an util function that returns an object with viewMode, group, page and story. Something like this:
 
 ```js
 {
