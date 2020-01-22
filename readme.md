@@ -45,7 +45,7 @@ The [Storybook provides](https://storybook.js.org/docs/addons/api) just the `pat
 - `/docs/components-accordion--base`
 - `/story/components-accordion--base`
 
-So, we'd splitted the path and creates an object with this anatomy:
+So, we've split the path and created an object with this anatomy:
 
 `/<viewMode>/<group>-<page>--<story>`
 
