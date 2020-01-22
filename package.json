@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "description": "Storybook Addon for Amplitude",
   "scripts": {
+    "clean": "rimraf dist",
     "build": "babel src -d dist",
     "build:watch": "npm run build -- --watch",
     "format": "prettier --write '**/*.js'",
     "test": "jest --coverage",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "prepare": "npm run clean && npm run build"
   },
   "main": "dist/register.js",
+  "files": [
+    "dist",
+    "register.js"
+  ],
   "keywords": [
     "addon",
     "storybook",
@@ -30,7 +36,8 @@
     "husky": "^4.0.1",
     "jest": "^24.9.0",
     "prettier": "1.19.1",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "rimraf": "^3.0.0"
   },
   "husky": {
     "hooks": {

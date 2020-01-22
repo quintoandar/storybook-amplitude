@@ -1,0 +1,11 @@
+__mocks__
+coverage
+src
+test
+
+.babelrc
+.drone.yml
+.prettierignore
+.prettierrc 
+
+jest.config.js
