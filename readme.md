@@ -71,4 +71,4 @@ Creating an util function that returns an object with viewMode, group, page and 
 
 ## Support
 
-You need a help? [Open a issue!](https://github.com/quintoandar/storybook-amplitude/issues/new)
+Do you need a help? [Open a issue here!](https://github.com/quintoandar/storybook-amplitude/issues/new)
