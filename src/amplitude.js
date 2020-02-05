@@ -13,10 +13,12 @@ export class Amplitude {
   logStoryEvent() {
     const { path, viewMode } = this.api.getUrlState();
 
-    this.amplitudeInstance.logEvent(getEventType(), {
-      viewMode,
-      ...getEventPropsByPath(path)
-    });
+    if (shouldLog(path)) {
+      this.amplitudeInstance.logEvent(getEventType(), {
+        viewMode,
+        ...getEventPropsByPath(path)
+      });
+    }
   }
 }
 
@@ -28,4 +30,8 @@ function buildAmplitudeInstance() {
 
 function getEventType() {
   return window.STORYBOOK_AMPLITUDE_EVENT || DEFAULT_EVENT;
+}
+
+function shouldLog(path) {
+  return typeof path !== 'undefined';
 }
