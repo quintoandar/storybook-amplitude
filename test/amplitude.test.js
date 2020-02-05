@@ -60,4 +60,14 @@ describe('Amplitude', () => {
       }
     );
   });
+
+  it('should not log the story when path is not defined', () => {
+    const api = {
+      getUrlState: jest.fn().mockReturnValue({ path: undefined })
+    };
+    const instance = new Amplitude(api);
+    instance.amplitudeInstance.logEvent.mockClear();
+    instance.logStoryEvent();
+    expect(instance.amplitudeInstance.logEvent).not.toBeCalled();
+  });
 });
