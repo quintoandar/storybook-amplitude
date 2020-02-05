@@ -1,6 +1,6 @@
 {
   "name": "storybook-amplitude",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Storybook Addon for Amplitude",
   "scripts": {
     "clean": "rimraf dist",
