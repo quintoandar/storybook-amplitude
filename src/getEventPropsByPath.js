@@ -8,8 +8,8 @@ export default function getEventPropsByPath(path) {
 
 function getGroup(path) {
   try {
-    const groupRegex = /(?<=\/(docs|story)\/)(.*)(?=--)/;
-    const splittedPath = groupRegex.exec(path)[0].split('-');
+    const groupRegex = /(docs\/|story\/)(.*)(?=--)/;
+    const splittedPath = groupRegex.exec(path)[2].split('-');
     const pageIndex = splittedPath.length - 1;
     splittedPath.splice(pageIndex, 1);
     return splittedPath.join('-');
