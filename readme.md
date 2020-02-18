@@ -21,7 +21,7 @@ module.exports = {
 Then, set an environment variable with your API key:
 
 ```
-window.STORYBOOK_AMPLITUDE_API_KEY = '561t966209h0789k7ffr2c3nmn0sau90'
+window.STORYBOOK_AMPLITUDE_API_KEY = 'YOUR_API_KEY_HERE'
 ```
 
 ### Configuration
