@@ -18,7 +18,7 @@ module.exports = {
 };
 ```
 
-Then, set an environment variable with your API key:
+Then, set on `window` object a key `STORYBOOK_AMPLITUDE_API_KEY` using your API key as value:
 
 ```
 window.STORYBOOK_AMPLITUDE_API_KEY = 'YOUR_API_KEY_HERE'
@@ -26,13 +26,14 @@ window.STORYBOOK_AMPLITUDE_API_KEY = 'YOUR_API_KEY_HERE'
 
 ### Configuration
 
-You can use a custom event name setting an environment variable:
+You can use a custom event name and identify each event with an email by setting the following values on `window` object:
 
 ```
 window.STORYBOOK_AMPLITUDE_EVENT = 'Your custom event'
+window.USER_EMAIL = 'email'
 ```
 
-The default value is `Story Viewed`.
+The default value for `STORYBOOK_AMPLITUDE_EVENT` is `Story Viewed`.
 
 ## Event anatomy
 
