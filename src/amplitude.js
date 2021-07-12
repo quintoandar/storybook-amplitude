@@ -15,6 +15,7 @@ export class Amplitude {
 
     if (shouldLog(path)) {
       this.amplitudeInstance.logEvent(getEventType(), {
+        email: window.USER_EMAIL,
         viewMode,
         ...getEventPropsByPath(path)
       });
