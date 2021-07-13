@@ -7,7 +7,6 @@ export class Amplitude {
   constructor(api) {
     this.api = api;
     this.amplitudeInstance = buildAmplitudeInstance();
-    this.logStoryEvent();
   }
 
   logStoryEvent() {
