@@ -27,15 +27,6 @@ describe('Amplitude', () => {
     expect(amplitude.getInstance).toBeCalled();
   });
 
-  it('should log the story event on initialization', () => {
-    const api = mockApi();
-    const instance = new Amplitude(api);
-    expect(instance.amplitudeInstance.logEvent).toBeCalledWith(DEFAULT_EVENT, {
-      viewMode,
-      ...getEventPropsByPath(path)
-    });
-  });
-
   it('should log the story event on call logStoryEvent method', () => {
     const api = mockApi();
     const instance = new Amplitude(api);
@@ -52,6 +43,7 @@ describe('Amplitude', () => {
     Object.assign(window, { STORYBOOK_AMPLITUDE_EVENT });
     const api = mockApi();
     const instance = new Amplitude(api);
+    instance.logStoryEvent();
     expect(instance.amplitudeInstance.logEvent).toBeCalledWith(
       STORYBOOK_AMPLITUDE_EVENT,
       {
