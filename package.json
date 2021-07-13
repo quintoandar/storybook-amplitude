@@ -1,6 +1,6 @@
 {
   "name": "@quintoandar/storybook-amplitude",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Storybook Addon for Amplitude",
   "scripts": {
     "clean": "rimraf dist",
