@@ -16,6 +16,11 @@
     "dist",
     "register.js"
   ],
+  "homepage": "https://github.com/quintoandar/storybook-amplitude#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quintoandar/storybook-amplitude.git"
+  },
   "keywords": [
     "addon",
     "storybook",
