@@ -1,5 +1,5 @@
 import { addons } from '@storybook/addons';
-import { DOCS_RENDERED, STORY_CHANGED } from '@storybook/core-events';
+import { DOCS_RENDERED, STORY_RENDERED } from '@storybook/core-events';
 import { ADDON_ID } from './constants';
 import { Amplitude } from './amplitude';
 
@@ -10,7 +10,7 @@ export const register = () => {
       api.on(DOCS_RENDERED, () => {
         amplitude.logStoryEvent();
       });
-      api.on(STORY_CHANGED, () => {
+      api.on(STORY_RENDERED, () => {
         amplitude.logStoryEvent();
       });
     });

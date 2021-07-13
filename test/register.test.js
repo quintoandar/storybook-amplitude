@@ -1,5 +1,5 @@
 import { addons } from '@storybook/addons';
-import { STORY_CHANGED } from '@storybook/core-events';
+import { DOCS_RENDERED, STORY_RENDERED } from '@storybook/core-events';
 import { ADDON_ID } from '../src/constants';
 import { Amplitude } from '../src/amplitude';
 import { register } from '../src/register';
@@ -45,7 +45,8 @@ describe('Register', () => {
     const api = mockApi();
     addons.register.mockImplementation((params, cb) => cb(api));
     register();
-    expect(api.on).toBeCalledWith(STORY_CHANGED, expect.any(Function));
+    expect(api.on).toBeCalledWith(DOCS_RENDERED, expect.any(Function));
+    expect(api.on).toBeCalledWith(STORY_RENDERED, expect.any(Function));
   });
 
   it('should log story when it has been changed', () => {
